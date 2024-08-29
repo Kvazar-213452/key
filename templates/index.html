@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link href="/static/index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="qqq">
+        <div class="ttt">Hot keys</div>
+        <br>
+        <div class="yyy">To make it so that you can open the program when you press a key or when you press a combination of keys, you must enter the key to be pressed and the full path to the file to be opened.</div>
+        <br>
+        <div class="yyy">To add key combinations, you need to type key + key, example: s + d.</div>
+        <br>
+        <div class="www">Attention more than 1 + is impossible and it is impossible to drive the upper register of keys.</div>
+        <br>
+    <form id="dataForm">
+        <input placeholder="Keyboard key:" class="eee" type="text" id="key" name="key"><br><br>
+        <input placeholder="Program:" class="eee" type="text" id="value" name="value"><br><br>
+        <button class="rrr" type="button" onclick="addData()">Add Data</button>
+        <button class="rrr" type="button" onclick="start()">Start</button>
+        <button class="rrr color_r" type="button" onclick="stop()">Stop</button>
+    </form>
+    <br>
+    <div id="dataList">
+        <h3>All the keys</h3>
+        <br>
+        <div id="list"></div>
+    </div>
+    <br>
+    <div class="yyy">This is a view of all combinations, when clicking on the delete button, the combination is deleted.</div>
+</div>
+<script src="/static/jquery-3.6.4.min.js"></script>
+<script src="/static/index.js"></script>
+</body>
+</html>
